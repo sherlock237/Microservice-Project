@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  content_service:
+    build: content_service
+    command: bash -c "python3 content_service/manage.py makemigrations && python3 content_service/manage.py migrate && python3 content_service/manage.py runserver 0.0.0.0:8001"
+    volumes:
+      - .:/app
+    ports:
+      - "8001:8001"
+    restart: always
+
+  user_interaction_service:
+    build: user_interaction_service
+    command: bash -c "python3 user_interaction_service/manage.py makemigrations && python3 user_interaction_service/manage.py migrate && python3 user_interaction_service/manage.py runserver 0.0.0.0:8002"
+    volumes:
+      - .:/app
+    ports:
+      - "8002:8002"
+    restart: always
+
+  user_service:
+    build: user_service
+    command: bash -c "python3 user_service/manage.py makemigrations && python3 user_service/manage.py migrate && python3 user_service/manage.py runserver 0.0.0.0:8003"
+    volumes:
+      - .:/app
+    ports:
+      - "8003:8003"
+    restart: always
+
+  nginx:
+    build: ./conf
+    ports:
+      - 80:80
+    links:
+      - content_service
+      - user_interaction_service
+      - user_service
+    depends_on:
+      - content_service
+      - user_interaction_service
+      - user_service
