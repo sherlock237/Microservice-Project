@@ -15,7 +15,7 @@ This service manages user interactions with the content. It provides APIs for cr
 *Mock Architecture*
 
 
-![Imgur](https://drive.google.com/file/d/1-7fB8Qn4rMYq0V_xoYOdbdX-5cgb4R0Y/view?usp=sharing)
+![Imgur](https://drive.google.com/file/d/1-7fB8Qn4rMYq0V_xoYOdbdX-5cgb4R0Y/view)
 
 ### Tools
 
