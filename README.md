@@ -13,6 +13,7 @@ This service manages user interactions with the content. It provides APIs for cr
 
 ### Architecture
 *Mock Architecture*
+https://drive.google.com/file/d/1J-qqEABcFvhZz3LkiWhT83dec-uGQwiL/view?usp=sharing
 
 
 ![image](https://drive.google.com/file/d/1J-qqEABcFvhZz3LkiWhT83dec-uGQwiL/view?usp=sharing)
