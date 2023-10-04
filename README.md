@@ -32,3 +32,6 @@ https://drive.google.com/file/d/1J-qqEABcFvhZz3LkiWhT83dec-uGQwiL/view?usp=shari
 - Build with `docker-compose build`
 - After build completed, run `docker-compose up -d` or without detached flag `docker-compose up`
 - Navigate to localhost, something like `0.0.0.0:8001` for `content service` API and so on
+
+### Documentation
+https://docs.google.com/document/d/1xPzc4tSEKCYew1s1Rof5pzo33zqxpBWaRA0To5pjEsw/edit?usp=sharing
